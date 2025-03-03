@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Reports</title>
+</head>
+<body>
+    <h2>Feedback Reports</h2>
+    <ul>
+        {% for report in reports %}
+            <li><strong>{{ report.name }}</strong> ({{ report.email }}): {{ report.message }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

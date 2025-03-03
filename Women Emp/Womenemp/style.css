@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background: #d63384;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+nav {
+    background: #343a40;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #d63384;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.topic-section {
+    display: none;
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topic-section.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #d63384;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #a61e64;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #343a40;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/* Individual Social Media Colors */
+.facebook { background: #1877f2; } /* Facebook Blue */
+.twitter { background: #1da1f2; } /* Twitter Blue */
+.instagram { background: #e4405f; } /* Instagram Red */
+.linkedin { background: #0077b5; } /* LinkedIn Blue */
+.youtube { background: #ff0000; } /* YouTube Red */
+
+/* Hover Effects */
+.social-icons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Hero Section */
+.hero {
+    background-image: url('c:\Users\Rajeev Singh\Downloads\photu.avif'); /* Replace with your selected image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.hero {
+    position: relative;
+    background-image: url('c:\Users\Rajeev Singh\Downloads\photu.avif');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+}
+
